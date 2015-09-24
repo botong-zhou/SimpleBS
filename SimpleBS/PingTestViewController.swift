@@ -69,6 +69,7 @@ class PingTestViewController: UIViewController, CDZPingerDelegate //,  UITextVie
                 self.pinger.startPinging()
                 self.pinger.delegate = self
                 self.taskLabel.text = " PING  \(addressInput):  56  data  bytes"
+                self.liveResultsView.text = ""
             }
         } else {
             self.OKTapped.setTitle("开始", forState: UIControlState.Normal)
